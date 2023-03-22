@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <td>username</td>
+            <td>pwd</td>
+        </thead>
+
+        {% for row in rows %}
+
+        <tr>
+            <td>{{row['username']}}</td>
+            <td>{{row['pwd']}}</td>
+        </tr>
+
+        {% endfor %}
+
+
+
+    </table>
+    <a href="/start">Go to homepage</a>
+</body>
+</html>

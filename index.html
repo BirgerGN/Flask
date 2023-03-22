@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask application</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+</head>
+<body>
+    <!-- <a href="/enternew">Lag en ny bruker</a><br><br><br>
+    <a href="/list">Vis alle brukere</a><br><br><br>
+    <a href="/rid">Slett en bruker</a><br><br><br>
+    <a href="/upd">Oppdater tabelen</a><br><br><br> -->
+
+<style> 
+    body{
+        text-align: center;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #4681f4;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #023af1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><i>BuccI</i></h1>
+    <br>
+
+
+    <p>Velg en av følgene:</p>
+
+    <div>
+      <a href="/enternew" class="btn">Lag en bruker</a>
+      <a href="/list" class="btn">Vis alle brukere</a>
+      <a href="/upd" class="btn">Oppdater tabelen</a>
+      <a href="/rid" class="btn">Slett en bruker</a>
+    </div>
+
+</body>
+</html>

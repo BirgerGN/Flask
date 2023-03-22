@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{{url_for('addrec')}}" method="POST">
+        <h3>Lag en bruker</h3>
+        Username<br>
+        <input type="text" name="username"><br>
+        Pwd<br>
+        <input type="password" name="pwd"><br>
+        <input type="submit" value="submit"><br><br><br>
+        <a href="/start">Go to homepage</a>
+    </form>
+    
+</body>
+</html>
+
+
+
+
+
+<!-- <form action="{{url_for('addrec')}}" method="POST">
+    <h3>Lag en bruker</h3>
+    Username<br>
+    <input type="text" name="username"><br>
+    Pwd<br>
+    <textarea type="text" name="pwd"></textarea><br>
+    <input type="submit" value="submit"><br><br><br>
+    <a href="/start">Go to homepage</a> -->

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{{url_for('oppda')}}" method="POST">
+        <h3>Oppdater</h3>
+        Fra:<br>
+        Username<br>
+        <input type="text" name="from_username"><br>
+        Pwd<br>
+        <input type="password" name="from_pwd"><br>
+        
+        Til:<br>
+        Username<br>
+        <input type="text" name="to_username"><br>
+        Pwd<br>
+        <input type="password" name="to_pwd"><br>
+        
+        <input type="submit" value="submit"><br>
+    </form>
+    
+</body>
+</html>
